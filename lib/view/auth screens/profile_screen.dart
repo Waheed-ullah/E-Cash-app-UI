@@ -64,9 +64,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               // borderRadius: BorderRadius.circular(20.0),
                               shape: BoxShape.circle),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(40.0),
+                            borderRadius: BorderRadius.circular(80.0),
                             child: Image.asset(
-                              image_thanks,
+                              image_profile,
                               height: 65,
                               fit: BoxFit.cover,
                             ),
@@ -79,7 +79,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               // borderRadius: BorderRadius.circular(20.0),
                               shape: BoxShape.circle),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(40.0),
+                            borderRadius: BorderRadius.circular(80.0),
                             child: Image.file(
                               _imageFile!,
                               height: 65,

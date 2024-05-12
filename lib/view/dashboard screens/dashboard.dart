@@ -3,7 +3,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:muzahir_fyp/assets/colors.dart';
 import 'package:muzahir_fyp/components/auth_widgets.dart';
-import 'package:muzahir_fyp/view/auth%20screens/login_screen.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/account_screen.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/chatting.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/history.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/home_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
@@ -20,9 +22,9 @@ class _DashboardState extends State<Dashboard> {
 
   final List<Widget> screens = [
     const HomeScreen(),
-    const LoginScreen(),
-    const LoginScreen(),
-    // const AccountScreen(),
+    const HistoryScreen(),
+    const ChatScreen(),
+    const AccountScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -42,6 +44,13 @@ class _DashboardState extends State<Dashboard> {
           SalomonBottomBarItem(
             icon: const Icon(Icons.payment_outlined),
             title: text("History", textColor: black),
+            selectedColor: primaryColor,
+          ),
+
+          /// chat
+          SalomonBottomBarItem(
+            icon: const Icon(Icons.chat),
+            title: text("Chat", textColor: black),
             selectedColor: primaryColor,
           ),
 

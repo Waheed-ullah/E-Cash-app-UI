@@ -3,7 +3,7 @@ import 'package:muzahir_fyp/assets/colors.dart';
 import 'package:muzahir_fyp/assets/images.dart';
 import 'package:muzahir_fyp/assets/spacing.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/E-money_request.dart';
-import 'package:muzahir_fyp/view/dashboard%20screens/cash_request.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/drawer.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/notification_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -21,12 +21,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     TabController control = TabController(length: 2, vsync: this);
 
     return Scaffold(
-      drawer: Drawer(
-        width: MediaQuery.sizeOf(context).width * .6,
-        child: const Column(
-          children: [],
-        ),
-      ),
+      drawer: const drawerbuild(),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -59,6 +54,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         height: MediaQuery.sizeOf(context).height * .3,
                       ).paddingBottom(size30),
                       const Spacer(),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.location_searching,
+                            size: size40,
+                            color: primaryColor,
+                          ),
+                        ).paddingBottom(size30),
+                      ),
                       Container(
                         // height: MediaQuery.sizeOf(context).height * .15,
                         width: double.infinity,

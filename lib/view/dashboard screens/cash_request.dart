@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:muzahir_fyp/assets/colors.dart';
 import 'package:muzahir_fyp/assets/spacing.dart';
 import 'package:muzahir_fyp/components/auth_widgets.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/helper_details.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class EMoneyRequest extends StatefulWidget {
@@ -75,7 +76,9 @@ class requestCash extends StatelessWidget {
                   fontWeight: FontWeight.w400, fontSize: size14)
               .paddingBottom(size20),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              const HelperDetails().launch(context);
+            },
             child: Container(
               height: size50,
               decoration: BoxDecoration(

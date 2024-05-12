@@ -6,6 +6,7 @@ import 'package:muzahir_fyp/components/auth_widgets.dart';
 import 'package:muzahir_fyp/components/build_button.dart';
 import 'package:muzahir_fyp/components/textfield.dart';
 import 'package:muzahir_fyp/view/auth%20screens/email_verification.dart';
+import 'package:muzahir_fyp/view/auth%20screens/login_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -128,7 +129,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                   textButton(
                     text: "login",
-                    ontap: () {},
+                    ontap: () {
+                      const LoginScreen().launch(context);
+                    },
                   )
                 ],
               )
