@@ -17,7 +17,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   var emailController = TextEditingController();
   var passController = TextEditingController();
-
+  var active1 = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,6 +55,18 @@ class _LoginScreenState extends State<LoginScreen> {
                       controller: passController,
                       maxline: 1,
                       labell: text("Password"),
+                      obscures: active1,
+                      suffix: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              active1 == true
+                                  ? active1 = false
+                                  : active1 = true;
+                            });
+                          },
+                          icon: active1 == true
+                              ? const Icon(Icons.visibility)
+                              : const Icon(Icons.visibility_off)),
                     ),
                     const Spacer(),
                     BuildButton(

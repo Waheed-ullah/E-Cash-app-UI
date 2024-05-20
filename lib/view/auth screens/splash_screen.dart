@@ -17,6 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     Timer(const Duration(seconds: 3), () {
+      // const Dashboard().launch(context);
+
       const WelcomeScreen().launch(context);
     });
     super.initState();

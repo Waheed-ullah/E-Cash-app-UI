@@ -74,6 +74,8 @@ class requestCash extends StatelessWidget {
               .paddingBottom(size5),
           text("800m (5 mins away)",
                   fontWeight: FontWeight.w400, fontSize: size14)
+              .paddingBottom(size5),
+          text("Amount Rs 12000", fontWeight: FontWeight.w400, fontSize: size14)
               .paddingBottom(size20),
           GestureDetector(
             onTap: () {

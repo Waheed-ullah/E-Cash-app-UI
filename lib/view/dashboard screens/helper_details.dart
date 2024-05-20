@@ -59,7 +59,7 @@ class _HelperDetailsState extends State<HelperDetails> {
                     .paddingBottom(size20),
                 GestureDetector(
                   onTap: () {
-                    const HelperDetails().launch(context);
+                    // const HelperDetails().launch(context);
                   },
                   child: Container(
                     height: size50,
@@ -80,7 +80,7 @@ class _HelperDetailsState extends State<HelperDetails> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    const HelperDetails().launch(context);
+                    // const HelperDetails().launch(context);
                   },
                   child: Container(
                     height: size50,

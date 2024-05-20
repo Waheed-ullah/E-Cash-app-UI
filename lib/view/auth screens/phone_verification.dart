@@ -33,7 +33,7 @@ class _PhoneVerificationScreenState extends State<PhoneVerificationScreen> {
                           icon: const Icon(Icons.arrow_back))
                       .paddingBottom(size20),
                 ),
-                text("Phone Verification ",
+                text("Verification ",
                         fontWeight: FontWeight.w500, fontSize: size18)
                     .paddingBottom(size15),
                 text("enter your otp here ",

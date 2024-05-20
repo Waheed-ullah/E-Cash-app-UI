@@ -18,6 +18,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   var _value;
+  var active1 = true;
   var nameController = TextEditingController();
 
   var emailController = TextEditingController();
@@ -59,7 +60,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     hint: text("Gender",
                         textColor: black, fontWeight: FontWeight.w400),
                     decoration: const InputDecoration.collapsed(hintText: ''),
-                    items: ['male', 'female', 'others'].map((String value) {
+                    items: ['Male', 'Female', 'Others'].map((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
                         child: text(value,
@@ -85,6 +86,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 hint: "Password",
                 maxline: 1,
                 labell: text("Password"),
+                obscures: active1,
+                suffix: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        active1 == true ? active1 = false : active1 = true;
+                      });
+                    },
+                    icon: active1 == true
+                        ? const Icon(Icons.visibility)
+                        : const Icon(Icons.visibility_off)),
               ),
               RadioListTile(
                 toggleable: true,
