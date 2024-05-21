@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   },
                                   child: Container(
                                     width:
-                                        MediaQuery.sizeOf(context).width * .4,
+                                        MediaQuery.sizeOf(context).width * .38,
                                     // width: MediaQuery.sizeOf(context).width * .3,
                                     decoration: BoxDecoration(
                                         border: Border.all(
@@ -130,11 +130,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     child: Center(
                                       child: text(homeModel[index].txt,
                                               overFlow: TextOverflow.ellipsis,
-                                              fontSize: size18,
+                                              fontSize: size16,
                                               textColor: index == selectedIndex
                                                   ? defaultBorderColor
                                                   : selectedBorderColor,
-                                              fontWeight: FontWeight.w600)
+                                              fontWeight: FontWeight.w500)
                                           .paddingAll(size5),
                                     ),
                                   ).paddingLeft(size10),

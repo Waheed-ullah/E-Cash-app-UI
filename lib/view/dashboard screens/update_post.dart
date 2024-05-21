@@ -7,14 +7,14 @@ import 'package:muzahir_fyp/components/build_button.dart';
 import 'package:muzahir_fyp/components/textfield.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-class PostScreen extends StatefulWidget {
-  const PostScreen({super.key});
+class UpdatePostScreen extends StatefulWidget {
+  const UpdatePostScreen({super.key});
 
   @override
-  State<PostScreen> createState() => _PostScreenState();
+  State<UpdatePostScreen> createState() => _UpdatePostScreenState();
 }
 
-class _PostScreenState extends State<PostScreen> {
+class _UpdatePostScreenState extends State<UpdatePostScreen> {
   var addressController = TextEditingController();
   var amountController = TextEditingController();
 
@@ -28,7 +28,7 @@ class _PostScreenState extends State<PostScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            text("Post Your Order",
+            text("Update Your Post here",
                     fontSize: size18, fontWeight: FontWeight.w600)
                 .paddingBottom(size10),
             Align(
@@ -84,13 +84,13 @@ class _PostScreenState extends State<PostScreen> {
                 onPressed: () {
                   if (addressController.text.isNotEmpty &&
                       amountController.text.isNotEmpty) {
-                    toast("Post successfully", bgColor: primaryColor);
+                    toast("Update successfully", bgColor: primaryColor);
                     finish(context);
                   } else {
                     toast("Address or Amount is not added", bgColor: redColor);
                   }
                 },
-                text: "Submit")
+                text: "Update")
           ],
         ).paddingAll(size20),
       ),

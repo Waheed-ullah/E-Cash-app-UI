@@ -8,6 +8,7 @@ import 'package:muzahir_fyp/view/dashboard%20screens/drawer.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/help_support.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/history.dart';
 import 'package:muzahir_fyp/view/dashboard%20screens/setting_screen.dart';
+import 'package:muzahir_fyp/view/dashboard%20screens/your_post.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -37,6 +38,13 @@ class AccountScreen extends StatelessWidget {
                 title: "History",
                 ontap: () {
                   const HistoryScreen().launch(context);
+                },
+              ),
+              drawerRow(
+                icon: Icons.post_add,
+                title: "Yours Posts",
+                ontap: () {
+                  const YourPosts().launch(context);
                 },
               ),
               drawerRow(
