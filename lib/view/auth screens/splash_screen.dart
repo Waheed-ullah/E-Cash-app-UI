@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:muzahir_fyp/assets/images.dart';
-import 'package:muzahir_fyp/view/dashboard%20screens/dashboard.dart';
+import 'package:muzahir_fyp/view/auth%20screens/welcome_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,9 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     Timer(const Duration(seconds: 3), () {
-      const Dashboard().launch(context);
-
-      // const WelcomeScreen().launch(context);
+      // const Dashboard().launch(context);
+      const WelcomeScreen().launch(context);
     });
     super.initState();
   }
